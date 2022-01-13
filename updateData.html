@@ -32,11 +32,18 @@
                 <label for="jumlah" class="form-label">jumlah</label>
                 <input type="text" class="form-control" id="jumlah" placeholder="jumlah">
               </div>
-              <button type="button" class="btn btn-success ms-2 mt-4" style="background-color: #858ab3; border:none;" onclick="save();">Save</button>
+              <button type="button" class="btn btn-success ms-2 mt-4" style="background-color: #000000; border:none;" onclick="save();">SAVE</button>
         </div>  
         </form>
         </div>
     </div>
+    <style>
+      body {
+ background-image: url("https://thumbs.dreamstime.com/b/elegant-grey-background-faint-vintage-texture-old-white-paper-design-soft-marbled-mottled-blur-effect-antique-parchment-210195134.jpg");
+ background-repeat: no-repeat;
+ background-size:cover
+      }
+    </style>
 </section>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -61,7 +68,7 @@
             headers:{ "Content-Type": "application/json" }
         })
             .then((result) => {
-                console.log("Data Berhasil Diedit")
+                console.log("Data Sapi Berhasil Diedit")
                 window.location.href = "/viewdata.html"   
             }).catch((err) => {
                 console.log(error)
